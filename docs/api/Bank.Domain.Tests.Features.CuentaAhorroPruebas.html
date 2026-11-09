@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+      <title>Class CuentaAhorroPruebas | Bank &#183; Pruebas de aceptaci&#243;n de usuario con BDD </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CuentaAhorroPruebas | Bank &#183; Pruebas de aceptaci&#243;n de usuario con BDD ">
+      
+      <meta name="description" content="Vincula las especificaciones de aceptaci&#243;n con la cuenta de ahorro.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/new/main/apiSpec/new?filename=Bank_Domain_Tests_Features_CuentaAhorroPruebas.md&amp;value=---%0Auid%3A%20Bank.Domain.Tests.Features.CuentaAhorroPruebas%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas">
+
+
+
+  <h1 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas" class="text-break">
+Class CuentaAhorroPruebas  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">Bank</span>.<a class="xref" href="Bank.Domain.html">Domain</a>.<span class="xref">Tests</span>.<a class="xref" href="Bank.Domain.Tests.Features.html">Features</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Bank.Domain.Tests.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Vincula las especificaciones de aceptación con la cuenta de ahorro.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Binding]
+public sealed class CuentaAhorroPruebas</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CuentaAhorroPruebas</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_cuenta" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.cuenta">
+  cuenta
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Cuenta perteneciente al escenario actual.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private CuentaAhorro cuenta</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Bank.Domain.CuentaAhorro.html">CuentaAhorro</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_error" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.error">
+  error
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Último error producido por una operación del escenario.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Exception? error</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_CuandoCanceloLaCuenta_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.CuandoCanceloLaCuenta*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_CuandoCanceloLaCuenta" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.CuandoCanceloLaCuenta">
+  CuandoCanceloLaCuenta()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ejecuta la cancelación y conserva su excepción.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[When(&quot;cancelo la cuenta&quot;)]
+public void CuandoCanceloLaCuenta()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_CuandoYoDeposito_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.CuandoYoDeposito*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_CuandoYoDeposito_System_Decimal_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.CuandoYoDeposito(System.Decimal)">
+  CuandoYoDeposito(decimal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ejecuta el depósito y conserva su excepción, si existe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[When(&quot;^deposito (.*)$&quot;)]
+public void CuandoYoDeposito(decimal monto)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>monto</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>Importe a depositar.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_CuandoYoRetiro_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.CuandoYoRetiro*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_CuandoYoRetiro_System_Decimal_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.CuandoYoRetiro(System.Decimal)">
+  CuandoYoRetiro(decimal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ejecuta el retiro y conserva su excepción, si existe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[When(&quot;^retiro (.*)$&quot;)]
+public void CuandoYoRetiro(decimal monto)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>monto</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>Importe a retirar.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_DadoUnaNuevaCuenta_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.DadoUnaNuevaCuenta*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_DadoUnaNuevaCuenta_System_String_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.DadoUnaNuevaCuenta(System.String)">
+  DadoUnaNuevaCuenta(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Prepara una cuenta del cliente Juan Perez.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Given(&quot;^la nueva cuenta numero (.+)$&quot;)]
+public void DadoUnaNuevaCuenta(string numeroCuenta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numeroCuenta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Número de cuenta indicado por Gherkin.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_EntoncesDeberiaMostrarseError_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.EntoncesDeberiaMostrarseError*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_EntoncesDeberiaMostrarseError" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.EntoncesDeberiaMostrarseError">
+  EntoncesDeberiaMostrarseError()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Comprueba que la operación produjo un error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Then(&quot;deberia ser error&quot;)]
+public void EntoncesDeberiaMostrarseError()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_EntoncesDeberiaMostrarseError_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.EntoncesDeberiaMostrarseError*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_EntoncesDeberiaMostrarseError_System_String_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.EntoncesDeberiaMostrarseError(System.String)">
+  EntoncesDeberiaMostrarseError(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Contrasta el mensaje exacto del error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Then(&quot;^deberia mostrarse el error: (.*)$&quot;)]
+public void EntoncesDeberiaMostrarseError(string mensaje)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mensaje</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Mensaje esperado.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_EntoncesElResultadoDeberiaSer_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.EntoncesElResultadoDeberiaSer*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_EntoncesElResultadoDeberiaSer_System_Decimal_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.EntoncesElResultadoDeberiaSer(System.Decimal)">
+  EntoncesElResultadoDeberiaSer(decimal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifica el saldo resultante.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Then(&quot;^el saldo nuevo deberia ser (.*)$&quot;)]
+public void EntoncesElResultadoDeberiaSer(decimal resultado)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultado</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>Saldo esperado.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_EntoncesLaCuentaEstaCancelada_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.EntoncesLaCuentaEstaCancelada*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_EntoncesLaCuentaEstaCancelada" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.EntoncesLaCuentaEstaCancelada">
+  EntoncesLaCuentaEstaCancelada()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Comprueba que la cuenta quedó cancelada sin errores.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Then(&quot;la cuenta deberia estar cancelada&quot;)]
+public void EntoncesLaCuentaEstaCancelada()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_EntoncesLaCuentaSigueActiva_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.EntoncesLaCuentaSigueActiva*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_EntoncesLaCuentaSigueActiva" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.EntoncesLaCuentaSigueActiva">
+  EntoncesLaCuentaSigueActiva()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Comprueba que la cuenta conserva su estado activo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Then(&quot;la cuenta deberia seguir activa&quot;)]
+public void EntoncesLaCuentaSigueActiva()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_VerificarCancelacionConSaldoNegativo_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.VerificarCancelacionConSaldoNegativo*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_VerificarCancelacionConSaldoNegativo" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.VerificarCancelacionConSaldoNegativo">
+  VerificarCancelacionConSaldoNegativo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Comprueba que un saldo negativo también impide la cancelación.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Then(&quot;un saldo negativo tambien deberia impedir la cancelacion&quot;)]
+public void VerificarCancelacionConSaldoNegativo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_VerificarDatosDeApertura_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.VerificarDatosDeApertura*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_VerificarDatosDeApertura" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.VerificarDatosDeApertura">
+  VerificarDatosDeApertura()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifica los datos del cliente y de la apertura.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Then(&quot;los datos de apertura y propietario deberian conservarse&quot;)]
+public void VerificarDatosDeApertura()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_VerificarDepositos_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.VerificarDepositos*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_VerificarDepositos_TechTalk_SpecFlow_Table_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.VerificarDepositos(TechTalk.SpecFlow.Table)">
+  VerificarDepositos(Table)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Comprueba depósitos decimales independientes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Then(&quot;estos depositos decimales producen el saldo indicado&quot;)]
+public void VerificarDepositos(Table examples)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>examples</code> <a class="xref" href="https://github.com/SpecFlowOSS/SpecFlow/blob/main/TechTalk.SpecFlow/Table.cs">Table</a></dt>
+    <dd><p>Importes positivos y saldos esperados.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_VerificarMovimientosInvalidos_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.VerificarMovimientosInvalidos*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_VerificarMovimientosInvalidos_TechTalk_SpecFlow_Table_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.VerificarMovimientosInvalidos(TechTalk.SpecFlow.Table)">
+  VerificarMovimientosInvalidos(Table)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Comprueba que los importes no positivos se rechazan sin alterar el saldo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Then(&quot;estos movimientos invalidos conservan el saldo&quot;)]
+public void VerificarMovimientosInvalidos(Table examples)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>examples</code> <a class="xref" href="https://github.com/SpecFlowOSS/SpecFlow/blob/main/TechTalk.SpecFlow/Table.cs">Table</a></dt>
+    <dd><p>Operación e importe inválido.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_VerificarOperacionesTrasCancelar_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.VerificarOperacionesTrasCancelar*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_VerificarOperacionesTrasCancelar" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.VerificarOperacionesTrasCancelar">
+  VerificarOperacionesTrasCancelar()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifica los tres métodos después de cancelar la cuenta.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Then(&quot;depositar retirar y cancelar otra vez deberian rechazarse&quot;)]
+public void VerificarOperacionesTrasCancelar()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_VerificarRetiros_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.VerificarRetiros*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_VerificarRetiros_TechTalk_SpecFlow_Table_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.VerificarRetiros(TechTalk.SpecFlow.Table)">
+  VerificarRetiros(Table)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Comprueba retiros decimales y la resta definida por la guía.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Then(&quot;estos retiros producen el saldo indicado&quot;)]
+public void VerificarRetiros(Table examples)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>examples</code> <a class="xref" href="https://github.com/SpecFlowOSS/SpecFlow/blob/main/TechTalk.SpecFlow/Table.cs">Table</a></dt>
+    <dd><p>Importes de retiro y saldos esperados partiendo de diez.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_YConSaldo_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.YConSaldo*"></a>
+
+  <h3 id="Bank_Domain_Tests_Features_CuentaAhorroPruebas_YConSaldo_System_Decimal_" data-uid="Bank.Domain.Tests.Features.CuentaAhorroPruebas.YConSaldo(System.Decimal)">
+  YConSaldo(decimal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Establece un saldo inicial mediante un depósito válido.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Given(&quot;^con saldo (.*)$&quot;)]
+public void YConSaldo(decimal monto)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>monto</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>Saldo del escenario.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/UPT-FAING-EPIS/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/blob/main/Bank/Bank.Domain.Tests/Features/BanckAccountTests.cs/#L8" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Milton H. Flores Chino · 2023078333 · Calidad y Pruebas de Software
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

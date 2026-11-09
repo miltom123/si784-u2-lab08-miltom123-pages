@@ -1,0 +1,146 @@
+{
+  "docfx_version": "2.81.0+ba844df625370a6bd7c1ecab0d0ec4d1d9128ac4",
+  "source_base_path": "/home/runner/work/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bank.Domain.Cliente.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bank.Domain.Cliente.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Bank.Domain.Cliente",
+      "Summary": "<p sourcefile=\"api/Bank.Domain.Cliente.yml\" sourcestartlinenumber=\"1\">Representa al propietario de una cuenta de ahorro.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bank.Domain.CuentaAhorro.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bank.Domain.CuentaAhorro.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Bank.Domain.CuentaAhorro",
+      "Summary": "<p sourcefile=\"api/Bank.Domain.CuentaAhorro.yml\" sourcestartlinenumber=\"1\">Representa una cuenta de ahorro con operaciones sobre importes decimales.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bank.Domain.Tests.Features.CuentaAhorroPruebas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bank.Domain.Tests.Features.CuentaAhorroPruebas.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Bank.Domain.Tests.Features.CuentaAhorroPruebas",
+      "Summary": "<p sourcefile=\"api/Bank.Domain.Tests.Features.CuentaAhorroPruebas.yml\" sourcestartlinenumber=\"1\">Vincula las especificaciones de aceptación con la cuenta de ahorro.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bank.Domain.Tests.Features.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bank.Domain.Tests.Features.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Bank.Domain.Tests.Features",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bank.Domain.Tests.Steps.ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bank.Domain.Tests.Steps.ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Bank.Domain.Tests.Steps.ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bank.Domain.Tests.Steps.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bank.Domain.Tests.Steps.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Bank.Domain.Tests.Steps",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bank.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bank.Domain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Bank.Domain",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
