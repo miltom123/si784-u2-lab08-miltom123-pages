@@ -1,0 +1,32 @@
+{
+  "tests": {
+    "total": "5",
+    "executed": "5",
+    "passed": "5",
+    "failed": "0",
+    "error": "0",
+    "timeout": "0",
+    "aborted": "0",
+    "inconclusive": "0",
+    "passedButRunAborted": "0",
+    "notRunnable": "0",
+    "notExecuted": "0",
+    "disconnected": "0",
+    "warning": "0",
+    "completed": "0",
+    "inProgress": "0",
+    "pending": "0"
+  },
+  "coverage": {
+    "line-rate": "1",
+    "branch-rate": "1",
+    "version": "1.9",
+    "timestamp": "1794190573",
+    "lines-covered": "39",
+    "lines-valid": "39",
+    "branches-covered": "8",
+    "branches-valid": "8"
+  },
+  "bdd_scenarios": 5,
+  "bdd_steps": 30
+}

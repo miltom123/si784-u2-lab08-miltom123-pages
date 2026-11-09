@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="0ce0aa79-a9a2-4052-92c6-a7e5ec483b8f" name="@runnervmwuk1x 2026-11-09 02:16:13" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-09T02:16:13.2521914+00:00" queuing="2026-11-09T02:16:13.2521915+00:00" start="2026-11-09T02:16:10.8191500+00:00" finish="2026-11-09T02:16:13.2639940+00:00" />
+  <TestSettings name="default" id="cbe1dcd3-4d43-4d42-a403-b91f94bf97fd">
+    <Deployment runDeploymentRoot="_runnervmwuk1x_2026-11-09_02_16_13" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="6f1df556-c655-4105-b9d3-48af167d686a" testId="ab80deae-defa-cd03-02a1-477f4499e666" testName="ClienteDepositaEnSuCuentaUnMontoYEsCorrecto" computerName="runnervmwuk1x" duration="00:00:00.0200830" startTime="2026-11-09T02:16:12.7694290+00:00" endTime="2026-11-09T02:16:12.7895120+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f1df556-c655-4105-b9d3-48af167d686a">
+      <Output>
+        <StdOut>Given la nueva cuenta numero 12345
+-&gt; done: CuentaAhorroPruebas.DadoUnaNuevaCuenta("12345") (0.0s)
+When deposito 10
+-&gt; done: CuentaAhorroPruebas.CuandoYoDeposito(10) (0.0s)
+Then el saldo nuevo deberia ser 10
+-&gt; done: CuentaAhorroPruebas.EntoncesElResultadoDeberiaSer(10) (0.0s)
+And los datos de apertura y propietario deberian conservarse
+-&gt; done: CuentaAhorroPruebas.VerificarDatosDeApertura() (0.0s)
+And estos depositos decimales producen el saldo indicado
+  --- table step argument ---
+  | monto | saldo |
+  | 0.01  | 0.01  |
+  | 1.25  | 1.25  |
+  | 10.50 | 10.50 |
+-&gt; done: CuentaAhorroPruebas.VerificarDepositos(&lt;table&gt;) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3bf89ff3-7f6b-452a-b1f2-1cacf51494cb" testId="f0ad3e06-5eee-fad8-f047-845e41e4ebd7" testName="ClienteCancelaSuCuentaSinSaldoYEsCorrecto" computerName="runnervmwuk1x" duration="00:00:00.1890390" startTime="2026-11-09T02:16:12.5784661+00:00" endTime="2026-11-09T02:16:12.7674147+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3bf89ff3-7f6b-452a-b1f2-1cacf51494cb">
+      <Output>
+        <StdOut>Given la nueva cuenta numero 12345
+-&gt; done: CuentaAhorroPruebas.DadoUnaNuevaCuenta("12345") (0.0s)
+When cancelo la cuenta
+-&gt; done: CuentaAhorroPruebas.CuandoCanceloLaCuenta() (0.0s)
+Then la cuenta deberia estar cancelada
+-&gt; done: CuentaAhorroPruebas.EntoncesLaCuentaEstaCancelada() (0.0s)
+And el saldo nuevo deberia ser 0
+-&gt; done: CuentaAhorroPruebas.EntoncesElResultadoDeberiaSer(0) (0.0s)
+And depositar retirar y cancelar otra vez deberian rechazarse
+-&gt; done: CuentaAhorroPruebas.VerificarOperacionesTrasCancelar() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6147363e-05af-43e6-b7bb-35936a9841ea" testId="63e55a43-278f-d253-70ca-f256b5f283cf" testName="ClienteRetiraEnSuCuentaUnMontoNegativoYEsIncorrecto" computerName="runnervmwuk1x" duration="00:00:00.0031600" startTime="2026-11-09T02:16:12.7980080+00:00" endTime="2026-11-09T02:16:12.8011676+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6147363e-05af-43e6-b7bb-35936a9841ea">
+      <Output>
+        <StdOut>Given la nueva cuenta numero 12345
+-&gt; done: CuentaAhorroPruebas.DadoUnaNuevaCuenta("12345") (0.0s)
+And con saldo 10
+-&gt; done: CuentaAhorroPruebas.YConSaldo(10) (0.0s)
+When retiro -10
+-&gt; done: CuentaAhorroPruebas.CuandoYoRetiro(-10) (0.0s)
+Then deberia ser error
+-&gt; done: CuentaAhorroPruebas.EntoncesDeberiaMostrarseError() (0.0s)
+And deberia mostrarse el error: El monto no puede ser menor o igual a 0
+-&gt; done: CuentaAhorroPruebas.EntoncesDeberiaMostrarseError("El monto no puede...") (0.0s)
+And el saldo nuevo deberia ser 10
+-&gt; done: CuentaAhorroPruebas.EntoncesElResultadoDeberiaSer(10) (0.0s)
+And estos movimientos invalidos conservan el saldo
+  --- table step argument ---
+  | operacion | monto |
+  | deposito  | 0     |
+  | deposito  | -1    |
+  | retiro    | 0     |
+  | retiro    | -1    |
+-&gt; done: CuentaAhorroPruebas.VerificarMovimientosInvalidos(&lt;table&gt;) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a5cac4ed-adcb-4a94-959c-0e2f72671119" testId="4ae48097-c413-3758-41dd-11151e5d7167" testName="ClienteRetiraEnSuCuentaUnMontoYEsCorrecto" computerName="runnervmwuk1x" duration="00:00:00.0017530" startTime="2026-11-09T02:16:12.8011848+00:00" endTime="2026-11-09T02:16:12.8029376+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5cac4ed-adcb-4a94-959c-0e2f72671119">
+      <Output>
+        <StdOut>Given la nueva cuenta numero 12345
+-&gt; done: CuentaAhorroPruebas.DadoUnaNuevaCuenta("12345") (0.0s)
+And con saldo 10
+-&gt; done: CuentaAhorroPruebas.YConSaldo(10) (0.0s)
+When retiro 10
+-&gt; done: CuentaAhorroPruebas.CuandoYoRetiro(10) (0.0s)
+Then el saldo nuevo deberia ser 0
+-&gt; done: CuentaAhorroPruebas.EntoncesElResultadoDeberiaSer(0) (0.0s)
+And estos retiros producen el saldo indicado
+  --- table step argument ---
+  | monto | saldo |
+  | 0.01  | 9.99  |
+  | 1.25  | 8.75  |
+  | 11    | -1    |
+-&gt; done: CuentaAhorroPruebas.VerificarRetiros(&lt;table&gt;) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="95f669d7-b671-4926-b92d-37f4aa3cab68" testId="bcd2fc43-9641-eb10-7e5a-55556683a8b8" testName="ClienteIntentaCancelarSuCuentaConSaldoYEsIncorrecto" computerName="runnervmwuk1x" duration="00:00:00.0084350" startTime="2026-11-09T02:16:12.7895509+00:00" endTime="2026-11-09T02:16:12.7979854+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95f669d7-b671-4926-b92d-37f4aa3cab68">
+      <Output>
+        <StdOut>Given la nueva cuenta numero 12345
+-&gt; done: CuentaAhorroPruebas.DadoUnaNuevaCuenta("12345") (0.0s)
+And con saldo 10
+-&gt; done: CuentaAhorroPruebas.YConSaldo(10) (0.0s)
+When cancelo la cuenta
+-&gt; done: CuentaAhorroPruebas.CuandoCanceloLaCuenta() (0.0s)
+Then deberia ser error
+-&gt; done: CuentaAhorroPruebas.EntoncesDeberiaMostrarseError() (0.0s)
+And deberia mostrarse el error: La cuenta debe tener saldo cero para cancelarse
+-&gt; done: CuentaAhorroPruebas.EntoncesDeberiaMostrarseError("La cuenta debe te...") (0.0s)
+And el saldo nuevo deberia ser 10
+-&gt; done: CuentaAhorroPruebas.EntoncesElResultadoDeberiaSer(10) (0.0s)
+And la cuenta deberia seguir activa
+-&gt; done: CuentaAhorroPruebas.EntoncesLaCuentaSigueActiva() (0.0s)
+And un saldo negativo tambien deberia impedir la cancelacion
+-&gt; done: CuentaAhorroPruebas.VerificarCancelacionConSaldoNegativo() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="ClienteCancelaSuCuentaSinSaldoYEsCorrecto" storage="/home/runner/work/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/bank/bank.domain.tests/bin/release/net8.0/bank.domain.tests.dll" id="f0ad3e06-5eee-fad8-f047-845e41e4ebd7">
+      <Execution id="3bf89ff3-7f6b-452a-b1f2-1cacf51494cb" />
+      <TestMethod codeBase="/home/runner/work/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/Bank/Bank.Domain.Tests/bin/Release/net8.0/Bank.Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Bank.Domain.Tests.Steps.ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature" name="ClienteCancelaSuCuentaSinSaldoYEsCorrecto" />
+    </UnitTest>
+    <UnitTest name="ClienteDepositaEnSuCuentaUnMontoYEsCorrecto" storage="/home/runner/work/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/bank/bank.domain.tests/bin/release/net8.0/bank.domain.tests.dll" id="ab80deae-defa-cd03-02a1-477f4499e666">
+      <Execution id="6f1df556-c655-4105-b9d3-48af167d686a" />
+      <TestMethod codeBase="/home/runner/work/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/Bank/Bank.Domain.Tests/bin/Release/net8.0/Bank.Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Bank.Domain.Tests.Steps.ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature" name="ClienteDepositaEnSuCuentaUnMontoYEsCorrecto" />
+    </UnitTest>
+    <UnitTest name="ClienteRetiraEnSuCuentaUnMontoYEsCorrecto" storage="/home/runner/work/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/bank/bank.domain.tests/bin/release/net8.0/bank.domain.tests.dll" id="4ae48097-c413-3758-41dd-11151e5d7167">
+      <Execution id="a5cac4ed-adcb-4a94-959c-0e2f72671119" />
+      <TestMethod codeBase="/home/runner/work/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/Bank/Bank.Domain.Tests/bin/Release/net8.0/Bank.Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Bank.Domain.Tests.Steps.ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature" name="ClienteRetiraEnSuCuentaUnMontoYEsCorrecto" />
+    </UnitTest>
+    <UnitTest name="ClienteIntentaCancelarSuCuentaConSaldoYEsIncorrecto" storage="/home/runner/work/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/bank/bank.domain.tests/bin/release/net8.0/bank.domain.tests.dll" id="bcd2fc43-9641-eb10-7e5a-55556683a8b8">
+      <Execution id="95f669d7-b671-4926-b92d-37f4aa3cab68" />
+      <TestMethod codeBase="/home/runner/work/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/Bank/Bank.Domain.Tests/bin/Release/net8.0/Bank.Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Bank.Domain.Tests.Steps.ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature" name="ClienteIntentaCancelarSuCuentaConSaldoYEsIncorrecto" />
+    </UnitTest>
+    <UnitTest name="ClienteRetiraEnSuCuentaUnMontoNegativoYEsIncorrecto" storage="/home/runner/work/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/bank/bank.domain.tests/bin/release/net8.0/bank.domain.tests.dll" id="63e55a43-278f-d253-70ca-f256b5f283cf">
+      <Execution id="6147363e-05af-43e6-b7bb-35936a9841ea" />
+      <TestMethod codeBase="/home/runner/work/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/Bank/Bank.Domain.Tests/bin/Release/net8.0/Bank.Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Bank.Domain.Tests.Steps.ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature" name="ClienteRetiraEnSuCuentaUnMontoNegativoYEsIncorrecto" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="ab80deae-defa-cd03-02a1-477f4499e666" executionId="6f1df556-c655-4105-b9d3-48af167d686a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f0ad3e06-5eee-fad8-f047-845e41e4ebd7" executionId="3bf89ff3-7f6b-452a-b1f2-1cacf51494cb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="63e55a43-278f-d253-70ca-f256b5f283cf" executionId="6147363e-05af-43e6-b7bb-35936a9841ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4ae48097-c413-3758-41dd-11151e5d7167" executionId="a5cac4ed-adcb-4a94-959c-0e2f72671119" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bcd2fc43-9641-eb10-7e5a-55556683a8b8" executionId="95f669d7-b671-4926-b92d-37f4aa3cab68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="5" executed="5" passed="5" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.6.0.0: Test execution started
+Running all tests in /home/runner/work/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/si784-2026-ii-si784-2026-ii-u2-lab08-miltom123/Bank/Bank.Domain.Tests/bin/Release/net8.0/Bank.Domain.Tests.dll
+   NUnit3TestExecutor discovered 5 of 5 NUnit test cases using Current Discovery mode, Non-Explicit run
+Given la nueva cuenta numero 12345
+-&gt; done: CuentaAhorroPruebas.DadoUnaNuevaCuenta("12345") (0.0s)
+When cancelo la cuenta
+-&gt; done: CuentaAhorroPruebas.CuandoCanceloLaCuenta() (0.0s)
+Then la cuenta deberia estar cancelada
+-&gt; done: CuentaAhorroPruebas.EntoncesLaCuentaEstaCancelada() (0.0s)
+And el saldo nuevo deberia ser 0
+-&gt; done: CuentaAhorroPruebas.EntoncesElResultadoDeberiaSer(0) (0.0s)
+And depositar retirar y cancelar otra vez deberian rechazarse
+-&gt; done: CuentaAhorroPruebas.VerificarOperacionesTrasCancelar() (0.0s)
+
+Given la nueva cuenta numero 12345
+-&gt; done: CuentaAhorroPruebas.DadoUnaNuevaCuenta("12345") (0.0s)
+When deposito 10
+-&gt; done: CuentaAhorroPruebas.CuandoYoDeposito(10) (0.0s)
+Then el saldo nuevo deberia ser 10
+-&gt; done: CuentaAhorroPruebas.EntoncesElResultadoDeberiaSer(10) (0.0s)
+And los datos de apertura y propietario deberian conservarse
+-&gt; done: CuentaAhorroPruebas.VerificarDatosDeApertura() (0.0s)
+And estos depositos decimales producen el saldo indicado
+  --- table step argument ---
+  | monto | saldo |
+  | 0.01  | 0.01  |
+  | 1.25  | 1.25  |
+  | 10.50 | 10.50 |
+-&gt; done: CuentaAhorroPruebas.VerificarDepositos(&lt;table&gt;) (0.0s)
+
+Given la nueva cuenta numero 12345
+-&gt; done: CuentaAhorroPruebas.DadoUnaNuevaCuenta("12345") (0.0s)
+And con saldo 10
+-&gt; done: CuentaAhorroPruebas.YConSaldo(10) (0.0s)
+When cancelo la cuenta
+-&gt; done: CuentaAhorroPruebas.CuandoCanceloLaCuenta() (0.0s)
+Then deberia ser error
+-&gt; done: CuentaAhorroPruebas.EntoncesDeberiaMostrarseError() (0.0s)
+And deberia mostrarse el error: La cuenta debe tener saldo cero para cancelarse
+-&gt; done: CuentaAhorroPruebas.EntoncesDeberiaMostrarseError("La cuenta debe te...") (0.0s)
+And el saldo nuevo deberia ser 10
+-&gt; done: CuentaAhorroPruebas.EntoncesElResultadoDeberiaSer(10) (0.0s)
+And la cuenta deberia seguir activa
+-&gt; done: CuentaAhorroPruebas.EntoncesLaCuentaSigueActiva() (0.0s)
+And un saldo negativo tambien deberia impedir la cancelacion
+-&gt; done: CuentaAhorroPruebas.VerificarCancelacionConSaldoNegativo() (0.0s)
+
+Given la nueva cuenta numero 12345
+-&gt; done: CuentaAhorroPruebas.DadoUnaNuevaCuenta("12345") (0.0s)
+And con saldo 10
+-&gt; done: CuentaAhorroPruebas.YConSaldo(10) (0.0s)
+When retiro -10
+-&gt; done: CuentaAhorroPruebas.CuandoYoRetiro(-10) (0.0s)
+Then deberia ser error
+-&gt; done: CuentaAhorroPruebas.EntoncesDeberiaMostrarseError() (0.0s)
+And deberia mostrarse el error: El monto no puede ser menor o igual a 0
+-&gt; done: CuentaAhorroPruebas.EntoncesDeberiaMostrarseError("El monto no puede...") (0.0s)
+And el saldo nuevo deberia ser 10
+-&gt; done: CuentaAhorroPruebas.EntoncesElResultadoDeberiaSer(10) (0.0s)
+And estos movimientos invalidos conservan el saldo
+  --- table step argument ---
+  | operacion | monto |
+  | deposito  | 0     |
+  | deposito  | -1    |
+  | retiro    | 0     |
+  | retiro    | -1    |
+-&gt; done: CuentaAhorroPruebas.VerificarMovimientosInvalidos(&lt;table&gt;) (0.0s)
+
+Given la nueva cuenta numero 12345
+-&gt; done: CuentaAhorroPruebas.DadoUnaNuevaCuenta("12345") (0.0s)
+And con saldo 10
+-&gt; done: CuentaAhorroPruebas.YConSaldo(10) (0.0s)
+When retiro 10
+-&gt; done: CuentaAhorroPruebas.CuandoYoRetiro(10) (0.0s)
+Then el saldo nuevo deberia ser 0
+-&gt; done: CuentaAhorroPruebas.EntoncesElResultadoDeberiaSer(0) (0.0s)
+And estos retiros producen el saldo indicado
+  --- table step argument ---
+  | monto | saldo |
+  | 0.01  | 9.99  |
+  | 1.25  | 8.75  |
+  | 11    | -1    |
+-&gt; done: CuentaAhorroPruebas.VerificarRetiros(&lt;table&gt;) (0.0s)
+
+NUnit Adapter 4.6.0.0: Test execution complete
+</StdOut>
+    </Output>
+    <CollectorDataEntries>
+      <Collector agentName="runnervmwuk1x" uri="datacollector://microsoft/CoverletCodeCoverage/1.0" collectorDisplayName="XPlat code coverage">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="runnervmwuk1x/coverage.cobertura.xml"></A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+</TestRun>
